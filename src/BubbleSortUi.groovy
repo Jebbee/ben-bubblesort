@@ -129,13 +129,19 @@ new SwingBuilder().edt {
 }
 
 String sortTextFromTextField(text) {
-    List list = text.tokenize(' ')
+    int[] list = text.tokenize(' ') as int[]
     bubbleSort(list, list.size())
     return list.join(' ')
 }
 
 
-def bubbleSort(List list, int n) {
+/**
+ * Sort the given list of integers, using the bubble sort algorithm (recursively).
+ *
+ * @param list The list to sort.
+ * @param n The first Nth number of items to sort in the list.
+ */
+def bubbleSort(int[] list, int n) {
     if (n == 1) {
         return
     }
