@@ -16,7 +16,7 @@ new SwingBuilder().edt {
             show: true,
             locationRelativeTo: null,
             defaultCloseOperation: EXIT_ON_CLOSE) {
-        lookAndFeel 'nimbus'
+        lookAndFeel 'mac'
         gridBagLayout()
         label(
                 text: 'List:',
